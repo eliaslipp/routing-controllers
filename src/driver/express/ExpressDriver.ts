@@ -350,8 +350,8 @@ export class ExpressDriver extends BaseDriver {
 
             // set http code
             // note that we can't use error instanceof HttpError properly anymore because of new typescript emit process
-            if (error.httpCode) {
-                response.status(error.httpCode);
+            if (error.status) {
+                response.status(error.status);
             } else {
                 response.status(500);
             }
@@ -370,7 +370,7 @@ export class ExpressDriver extends BaseDriver {
                 response.send(this.processTextError(error)); // todo: no need to do it because express by default does it
             }
         }
-        options.next(error);
+        //options.next(error);
     }
 
     // -------------------------------------------------------------------------
