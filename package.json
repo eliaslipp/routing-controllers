@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/pleerock/routing-controllers/issues"
   },
-  "main": "index.js",
+  "main": "build/compiled/src/index.js",
   "tags": [
     "express",
     "express.js",
