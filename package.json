@@ -92,5 +92,5 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test gulp tests"
   },
-  "typings": "index.d.ts"
+  "typings": "build/compiled/src/index.d.ts"
 }
